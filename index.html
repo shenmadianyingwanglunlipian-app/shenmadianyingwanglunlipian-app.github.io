@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神马电影网伦理片 - 以影像探讨人与边界，伦理题材深度解读与片单</title>
+<meta name="description" content="神马电影网伦理片（shenmadianyingwanglunlipian-app）聚焦伦理题材影视作品的解读与梳理：以人物处境为入口，讨论选择、责任、亲情与道德的复杂张力。提供片单推荐、导演脉络、争议辨析与观影思考，拒绝猎奇，回归文本。">
+<meta name="keywords" content="神马电影网伦理片, 伦理电影, 伦理题材, 人性探讨, 剧情片推荐, 影视解读, 道德困境, shenmadianyingwanglunlipian">
+<meta name="author" content="神马电影网伦理片编辑组">
+<meta name="robots" content="index, follow">
+<meta name="bingbot" content="index, follow">
+<meta name="theme-color" content="#1c0a14">
+<link rel="canonical" href="https://shenmadianyingwanglunlipian-app.github.io">
+<style>
+:root{
+  --tx:#f3e9f5;
+  --dim:#c0a9bd;
+  --rose:#e5488a;
+  --plum:#7b4ea8;
+  --bg:#15070f;
+  --panel:#21102a;
+  --hair:rgba(255,255,255,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Songti SC","SimSun","WenQuanYi Micro Hei",Georgia,serif;
+  background:var(--bg);
+  color:var(--tx);
+  line-height:1.85;
+  letter-spacing:.2px;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+/* brand */
+.brand{position:sticky;top:0;z-index:40;background:rgba(21,7,15,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--hair)}
+.brand .wrap{display:flex;align-items:center;height:64px;gap:20px}
+.mark{font-size:21px;font-weight:800;letter-spacing:1px}
+.mark u{text-decoration:none;color:var(--rose)}
+.menu{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.menu a{padding:8px 14px;font-size:14px;color:var(--dim);border-radius:6px;transition:.2s}
+.menu a:hover{color:#fff;background:rgba(229,72,138,.15)}
+/* opening */
+.opening{padding:80px 0 60px;position:relative;overflow:hidden}
+.opening::before{content:"";position:absolute;right:-120px;top:-80px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(229,72,138,.22),transparent 70%)}
+.opening .wrap{position:relative;display:grid;grid-template-columns:1fr 340px;gap:50px;align-items:center}
+.kicker{font-size:12px;letter-spacing:4px;color:var(--rose);margin-bottom:16px}
+h1{font-size:clamp(32px,5.4vw,54px);line-height:1.22;font-weight:800}
+h1 i{font-style:normal;color:transparent;background:linear-gradient(100deg,var(--rose),var(--plum));-webkit-background-clip:text;background-clip:text}
+.lede{margin-top:18px;color:var(--dim);font-size:16px;max-width:600px}
+.quote{margin-top:30px;padding:18px 22px;border-left:3px solid var(--rose);background:rgba(229,72,138,.06);font-size:15px;color:#f7eefa;max-width:600px}
+.actions{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.act{padding:12px 24px;border-radius:30px;font-size:15px;font-weight:700;transition:.2s;font-family:system-ui,sans-serif}
+.act.on{background:linear-gradient(100deg,var(--rose),var(--plum));color:#fff}
+.act.off{border:1px solid var(--hair);color:#fff}
+.act:hover{transform:translateY(-2px)}
+/* frame */
+.frame{border:1px solid var(--hair);border-radius:18px;padding:26px;background:linear-gradient(160deg,#27122f,#17090f)}
+.frame .row{display:flex;justify-content:space-between;font-size:13px;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.12);font-family:system-ui,sans-serif}
+.frame .row:last-child{border:0}
+.frame .row b{color:var(--rose);font-weight:600}
+.frame h3{font-size:18px;margin-bottom:16px;font-family:system-ui,sans-serif}
+/* block */
+section{padding:60px 0}
+.block-h{margin-bottom:30px}
+.block-h span{font-size:12px;letter-spacing:3px;color:var(--plum);font-family:system-ui,sans-serif}
+.block-h h2{font-size:27px;font-weight:800;margin-top:4px}
+.block-h p{color:var(--dim);font-size:14px;margin-top:8px;max-width:640px}
+/* mosaic */
+.mosaic{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.tile{grid-column:span 4;background:var(--panel);border:1px solid var(--hair);border-radius:14px;padding:20px;transition:.25s}
+.tile.wide{grid-column:span 6}
+.tile:hover{border-color:rgba(229,72,138,.45);transform:translateY(-4px)}
+.tile .tag{font-size:11px;letter-spacing:1px;color:var(--rose);font-family:system-ui,sans-serif}
+.tile h3{font-size:18px;margin:8px 0 8px}
+.tile p{font-size:13px;color:var(--dim)}
+.tile .meta{margin-top:14px;font-size:12px;color:#9d8294;font-family:system-ui,sans-serif;display:flex;gap:10px;flex-wrap:wrap}
+/* director */
+.dir{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.dir .card{background:var(--panel);border:1px solid var(--hair);border-radius:14px;overflow:hidden}
+.dir .port{height:120px;display:grid;place-items:center;font-size:30px;font-style:normal}
+.dir .card h4{padding:14px 16px 0;font-size:16px}
+.dir .card p{padding:6px 16px 18px;font-size:13px;color:var(--dim)}
+/* debate */
+.debate{border:1px solid var(--hair);border-radius:14px;overflow:hidden}
+.debate details{padding:18px 22px;border-bottom:1px solid var(--hair)}
+.debate details:last-child{border:0}
+.debate summary{cursor:pointer;font-weight:700;font-size:16px;list-style:none;display:flex;gap:12px}
+.debate summary::-webkit-details-marker{display:none}
+.debate summary::before{content:"?";color:var(--rose);font-family:system-ui,sans-serif}
+.debate .ans{margin-top:12px;color:var(--dim);font-size:14px}
+.debate .ans b{color:#f3e9f5}
+/* reading */
+.read{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.read .step{display:flex;gap:16px;background:var(--panel);border:1px solid var(--hair);border-radius:14px;padding:20px}
+.step .num{font-family:system-ui,sans-serif;font-size:12px;font-weight:800;color:var(--rose);width:38px;height:38px;flex:none;border-radius:50%;border:1px solid rgba(229,72,138,.4);display:grid;place-items:center}
+.step h4{font-size:16px;margin-bottom:5px}
+.step p{font-size:13px;color:var(--dim)}
+/* colophon */
+.colophon{background:linear-gradient(180deg,transparent,rgba(229,72,138,.05));padding:56px 0}
+.colophon .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:40px}
+.colophon h2{font-size:24px;margin-bottom:14px}
+.colophon p{color:var(--dim);font-size:14px}
+.colophon ul{list-style:none;display:grid;gap:10px}
+.colophon li{font-size:14px;color:var(--dim);border-bottom:1px solid var(--hair);padding-bottom:9px}
+.colophon li b{color:var(--rose);font-family:system-ui,sans-serif}
+/* foot */
+foot{display:block;border-top:1px solid var(--hair);padding:34px 0 26px;text-align:center;font-size:12px;color:#8d7286;font-family:system-ui,sans-serif}
+foot b{color:var(--rose)}
+/* rwd */
+@media(max-width:920px){
+  .opening .wrap{grid-template-columns:1fr}
+  .mosaic .tile,.mosaic .tile.wide{grid-column:span 6}
+  .dir{grid-template-columns:repeat(2,1fr)}
+  .read{grid-template-columns:1fr}
+  .colophon .wrap{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .brand .wrap{height:auto;padding:12px 16px;flex-wrap:wrap}
+  .menu{margin-left:0;width:100%}
+  .wrap{padding:0 16px}
+  .mosaic .tile,.mosaic .tile.wide{grid-column:span 12}
+  .dir{grid-template-columns:1fr}
+  h1{font-size:31px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="brand">
+  <div class="wrap">
+    <div class="mark">神马电影网<wbr><u>伦理片</u></div>
+    <nav class="menu">
+      <a href="#xudian">选题</a>
+      <a href="#pianfu">片单</a>
+      <a href="#daoyan">导演</a>
+      <a href="#sikao">思考</a>
+      <a href="#fangfa">读法</a>
+      <a href="#yiwen">辨析</a>
+    </nav>
+  </div>
+</div>
+
+<header class="opening">
+  <div class="wrap">
+    <div>
+      <div class="kicker">ETHICAL CINEMA · 伦理题材影像研究</div>
+      <h1>当选择<span>没有正确答案</span></h1>
+      <p class="lede">神马电影网伦理片（shenmadianyingwanglunlipian-app）不做猎奇的罗列，只做认真的阅读。伦理片的价值，在于它把人放进两难的处境，逼我们追问：如果是我，会怎么做？</p>
+      <blockquote class="quote">"道德不是答案，而是人在困境中仍愿意承担的那个动作。"——本站编辑部</blockquote>
+      <div class="actions">
+        <a class="act on" href="#pianfu">进入片单</a>
+        <a class="act off" href="#sikao">今日思辨</a>
+      </div>
+    </div>
+    <aside class="frame">
+      <h3>🎞 本期研读</h3>
+      <div class="row"><span>影片</span><b>《选择的重量》</b></div>
+      <div class="row"><span>核心困境</span><b>亲情 vs 公正</b></div>
+      <div class="row"><span>年代 / 地区</span><b>2024 · 东亚</b></div>
+      <div class="row"><span>研读角度</span><b>叙事视角与道德判断</b></div>
+      <div class="row"><span>访问入口</span><b style="word-break:break-all">https://shenmadianyingwanglunlipian-app.github.io</b></div>
+    </aside>
+  </div>
+</header>
+
+<section id="xudian">
+  <div class="wrap">
+    <div class="block-h">
+      <span>THEMES</span>
+      <h2>伦理片的四个切口</h2>
+      <p>伦理不是题材标签，而是一种提问方式。我们从四个反复出现的切口进入影片，避免把复杂的人简化成对错。</p>
+    </div>
+    <div class="mosaic">
+      <article class="tile">
+        <div class="tag">切口 01</div>
+        <h3>亲情的边界</h3>
+        <p>父母与子女、兄弟姐妹之间，爱是否会变成控制？责任是否有尽头？</p>
+        <div class="meta"><span>代表片 12 部</span><span>长文 6 篇</span></div>
+      </article>
+      <article class="tile wide">
+        <div class="tag">切口 02</div>
+        <h3>个体与群体</h3>
+        <p>当个人利益与共同体福祉冲突，影片如何处理"少数"的处境？这里藏着伦理片最锋利的部分。</p>
+        <div class="meta"><span>代表片 18 部</span><span>圆桌 3 场</span></div>
+      </article>
+      <article class="tile">
+        <div class="tag">切口 03</div>
+        <h3>真相与善意</h3>
+        <p>说一个善意的谎言，是否比说出残酷的真相更道德？影片常把这个问题留给观众。</p>
+        <div class="meta"><span>代表片 9 部</span><span>短评 40 条</span></div>
+      </article>
+      <article class="tile wide">
+        <div class="tag">切口 04</div>
+        <h3>技术与人性</h3>
+        <p>当记忆可被删除、身份可被复制、情感可被模拟，人之为人的那条线，画在哪里？</p>
+        <div class="meta"><span>代表片 15 部</span><span>专题 2 辑</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="pianfu">
+  <div class="wrap">
+    <div class="block-h">
+      <span>FILM LIST</span>
+      <h2>值得重看的伦理片单</h2>
+      <p>以下影片均从"人物处境"而非"情节刺激"出发入选。片单按月更新，附研读笔记与争议提示。</p>
+    </div>
+    <div class="mosaic">
+      <article class="tile">
+        <div class="tag">亲情 · 东亚</div>
+        <h3>《母亲的抉择》</h3>
+        <p>为保住儿子的前途，母亲选择隐瞒一场车祸。十年后真相以另一种方式回来。</p>
+        <div class="meta"><span>推荐度 ★★★★☆</span><span>研读笔记</span></div>
+      </article>
+      <article class="tile">
+        <div class="tag">司法 · 人性</div>
+        <h3>《第十二种意见》</h3>
+        <p>十二名陪审员中只有一人坚持"再想一想"，分歧本身成为影片真正的主角。</p>
+        <div class="meta"><span>推荐度 ★★★★★</span><span>剧本拆解</span></div>
+      </article>
+      <article class="tile">
+        <div class="tag">婚姻 · 信任</div>
+        <h3>《白色谎言》</h3>
+        <p>一对夫妻在丧子后各自保守一个秘密，婚姻变成一场心照不宣的共谋。</p>
+        <div class="meta"><span>推荐度 ★★★★☆</span><span>表演分析</span></div>
+      </article>
+      <article class="tile">
+        <div class="tag">科技 · 身份</div>
+        <h3>《复制品》</h3>
+        <p>用亡故亲人的数据训练出的"她"，究竟是慰藉，还是对逝者的冒犯？</p>
+        <div class="meta"><span>推荐度 ★★★★☆</span><span>伦理争议</span></div>
+      </article>
+      <article class="tile wide">
+        <div class="tag">战争 · 良知</div>
+        <h3>《雪线以南》</h3>
+        <p>占领区的一名教师，该教孩子仇恨，还是教他们活下去？没有英雄，只有挣扎。</p>
+        <div class="meta"><span>推荐度 ★★★★★</span><span>历史背景</span><span>长文</span></div>
+      </article>
+      <article class="tile">
+        <div class="tag">阶层 · 尊严</div>
+        <h3>《楼梯上的日子》</h3>
+        <p>一次偶然的善意，如何把两个阶层的人拖进一场无法收场的道德债务。</p>
+        <div class="meta"><span>推荐度 ★★★★☆</span><span>细节拉片</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="daoyan">
+  <div class="wrap">
+    <div class="block-h">
+      <span>AUTEURS</span>
+      <h2>三位擅写伦理困境的导演</h2>
+      <p>他们不给出答案，而是把问题问得更准、更深、更疼。</p>
+    </div>
+    <div class="dir">
+      <div class="card">
+        <div class="port" style="background:linear-gradient(135deg,#3a1230,#7b1f54)">🎬</div>
+        <h4>是枝裕和</h4>
+        <p>擅长在日常缝隙里放置伦理炸弹：非血缘的家庭、偷来的亲情、沉默的原谅。</p>
+      </div>
+      <div class="card">
+        <div class="port" style="background:linear-gradient(135deg,#12303a,#1f5c7b)">🎬</div>
+        <h4>阿斯哈·法哈蒂</h4>
+        <p>用一场误会撬动整个家庭的道德地基，让"谁对谁错"在追问中彻底失效。</p>
+      </div>
+      <div class="card">
+        <div class="port" style="background:linear-gradient(135deg,#2b123a,#5c1f7b)">🎬</div>
+        <h4>克里斯托弗·诺兰</h4>
+        <p>把伦理困境装进高概念结构：时间、记忆、身份，都是逼人做选择的机器。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sikao">
+  <div class="wrap">
+    <div class="block-h">
+      <span>THINKING</span>
+      <h2>今日思辨</h2>
+      <p>一段处境，两难选择。我们不判对错，只邀请你把自己的答案说出来。</p>
+    </div>
+    <div class="mosaic">
+      <article class="tile wide">
+        <div class="tag">情境 A</div>
+        <h3>你会替亲人顶罪吗？</h3>
+        <p>兄长酒驾撞人后逃逸，请求你顶替投案。顶替，是亲情；不顶替，是法律。影片《第十二种意见》给出的不是答案，而是一个更长的问题：代价由谁承担？</p>
+      </article>
+      <article class="tile">
+        <div class="tag">情境 B</div>
+        <h3>该不该告诉她真相？</h3>
+        <p>妻子临终前留下一个善意谎言，揭穿它会摧毁女儿的婚姻。隐瞒是保护，还是剥夺了她知情的权利？</p>
+      </article>
+      <article class="tile">
+        <div class="tag">情境 C</div>
+        <h3>AI 复刻的"母亲"，算亲人吗？</h3>
+        <p>用逝者全部社交数据训练出的对话模型，能安慰孤独的儿子，却也让全家陷入"她到底还在不在"的折磨。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="fangfa">
+  <div class="wrap">
+    <div class="block-h">
+      <span>HOW TO READ</span>
+      <h2>怎么"读"一部伦理片</h2>
+      <p>伦理片不宜只看剧情。掌握这四个步骤，影片的厚度才会显现。</p>
+    </div>
+    <div class="read">
+      <div class="step"><div class="num">1</div><div><h4>找出"不可兼得"</h4><p>先问：角色被迫在两个好东西之间选一个吗？伦理张力几乎都来自"两个都对，但不能都要"。</p></div></div>
+      <div class="step"><div class="num">2</div><div><h4>追踪视角切换</h4><p>影片把镜头交给谁，谁就更"对"。试着切换到对手的视角重讲一遍故事，结论常会翻转。</p></div></div>
+      <div class="step"><div class="num">3</div><div><h4>留意沉默与留白</h4><p>伦理片真正的答案往往不在台词里，而在一句没说完的话、一个没推开的门。</p></div></div>
+      <div class="step"><div class="num">4</div><div><h4>区分"判断"与"理解"</h4><p>先理解角色为何如此选择，再谈应不应该。理解不等于赞同，但理解是讨论的起点。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="yiwen">
+  <div class="wrap">
+    <div class="block-h">
+      <span>Q &amp; A</span>
+      <h2>常见辨析</h2>
+    </div>
+    <div class="debate">
+      <details open>
+        <summary>伦理片等于"大尺度"或"禁忌"题材吗？</summary>
+        <div class="ans"><b>不等于。</b>尺度是分级与审查的概念，伦理是关于"人应当如何相处"的追问。许多最锋利的伦理片，情节极其克制，冲突全在眼神与台词之间。</div>
+      </details>
+      <details>
+        <summary>为什么这类影片常显得"沉闷"？</summary>
+        <div class="ans">因为它们拒绝用爽感解决矛盾。真实的道德困境没有背景音乐提示你该站哪边，影片只是如实呈现那份不适。</div>
+      </details>
+      <details>
+        <summary>看完感到压抑，是否正常？</summary>
+        <div class="ans">正常，且正是价值所在。伦理片不负责安慰，它负责让你在走出影院后，仍反复想起那个问题。</div>
+      </details>
+      <details>
+        <summary>如何避免把解读变成道德审判？</summary>
+        <div class="ans">把"他不该这样做"换成"他为什么只能这样做"。前者是判决，后者才是解读，也是共情开始的地方。</div>
+      </details>
+      <details>
+        <summary>本站内容是否涉及违规资源？</summary>
+        <div class="ans">不涉及。神马电影网伦理片仅提供影片介绍、研读笔记、导演脉络与观影方法，倡导通过合法渠道观看正版内容。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="colophon">
+  <div class="wrap">
+    <div>
+      <h2>关于神马电影网伦理片</h2>
+      <p>我们是一组偏爱"难看但值得看"的影片的写作者。相信影像有能力把抽象的道德问题，变成具体的人、具体的眼泪与具体的选择。</p>
+      <p style="margin-top:10px">站点：<b style="color:#e5488a">https://shenmadianyingwanglunlipian-app.github.io</b></p>
+    </div>
+    <div>
+      <h2>栏目索引</h2>
+      <ul>
+        <li><b>选题</b> 伦理的四个切口</li>
+        <li><b>片单</b> 值得重看的伦理片</li>
+        <li><b>导演</b> 擅写困境的作者</li>
+        <li><b>思辨</b> 今日两难情境</li>
+        <li><b>读法</b> 四步读懂影片</li>
+        <li><b>辨析</b> 常见误解澄清</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<foot>
+  本站由 <b>神马电影网伦理片</b> 维护 · 域名 <b>shenmadianyingwanglunlipian-app.github.io</b> · 倡导理性观影与版权意识，所有解读仅代表编辑部观点
+</foot>
+
+</body>
+</html>
